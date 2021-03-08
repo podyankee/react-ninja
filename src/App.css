@@ -1,3 +1,7 @@
+body {
+	font-size: 24px;
+}
+
 .app-wrapper {
 	display: grid;
 	grid-template-areas:
@@ -9,22 +13,11 @@
 	width: 100%;
 	margin: 0 auto;
 }
-.header {
-	grid-area: h;
-	background-color: #06d6a0;
-}
-.header img {
-	width: 20px;
-}
-.content img {
-	max-width: 100%;
-	height: auto;
-}
-.nav {
-	grid-area: n;
-	background-color: #ffd166;
-}
-.content {
+.app-wrapper-content {
 	grid-area: c;
 	background-color: #48bfe3;
+}
+.app-wrapper-content img {
+	max-width: 100%;
+	height: auto;
 }
