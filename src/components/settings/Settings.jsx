@@ -1,6 +1,6 @@
 import React from 'react';
 
-import s from './Settings.module.sass';
+// import s from './Settings.module.sass';
 
 const Settings = (props) => {
 	return (

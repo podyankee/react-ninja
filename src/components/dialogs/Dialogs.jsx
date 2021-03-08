@@ -1,6 +1,6 @@
 import React from 'react';
 
-import s from './Dialog.module.sass';
+// import s from './Dialog.module.sass';
 
 const Dialogs = (props) => {
 	return (
