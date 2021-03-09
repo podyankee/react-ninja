@@ -3,12 +3,15 @@ import s from './MyPosts.module.sass';
 import Post from './Post/Post';
 
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-	let postData = [
+	let posts = [
 		{id: 1, message: 'Hi, how are you?', likeCount: 3},
 		{id: 2, message: 'It\'s my first post', likeCount: 0}
 	];
+
+	let postsElements = posts
+				.map(post => <Post message={post.message} likeCount={post.likeCount} />);
 
 	return (
 
@@ -23,8 +26,7 @@ const MyPosts = () => {
 						</div>
 					</div>
 					<div className={s.posts}>
-						<Post message={postData[0].message} likeCount={postData[0].likeCount} />
-						<Post message={postData[1].message} likeCount={postData[1].likeCount} />
+						{postsElements}
 					</div>
 				</div>
 	);
