@@ -13,7 +13,6 @@ code {
 }
 
 header,
-nav,
-.app-wrapper-content {
+nav {
 	padding: 10px;
 }

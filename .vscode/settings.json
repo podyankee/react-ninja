@@ -4,6 +4,7 @@
     "public/": true,
     "build/": true,
     ".vscode/": true,
+    ".netlify/": true,
     "package.json": true,
     "package-lock.json": true,
     ".babelrc": true,
