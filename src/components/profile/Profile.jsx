@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react";
 // import s from './Profile.module.sass';
-import MyPosts from './MyPosts/MyPosts';
-import ProfileInfo from './ProfileInfo/ProfileInfo';
-
+import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = (props) => {
-
 	return (
 		<div>
-				<ProfileInfo />
-				<MyPosts posts={props.state.posts} addPost={props.addPost} />
-			</div>
+			<ProfileInfo />
+			<MyPosts
+				posts={props.profilePage.posts}
+				newPostText={props.profilePage.newPostText}
+				updateNewPostText={props.updateNewPostText}
+				addPost={props.addPost}
+			/>
+		</div>
 	);
-}
+};
 
 export default Profile;
